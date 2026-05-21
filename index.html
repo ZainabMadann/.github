@@ -195,7 +195,7 @@
     .section-head h2 { grid-column: 1; }
   }
 
-  /* ---------- entries (experience, education, projects) ---------- */
+  /* ---------- entries ---------- */
   .entries {
     display: grid;
     grid-template-columns: 200px 1fr;
@@ -234,7 +234,6 @@
     gap: 10px;
     flex-wrap: wrap;
   }
-  .entry-body .sub .sep { color: var(--line); }
   .entry-body p { margin: 0 0 14px; color: var(--ink-2); max-width: 64ch; text-wrap: pretty; }
   .entry-body ul { margin: 0 0 18px; padding: 0; list-style: none; max-width: 64ch; }
   .entry-body ul li {
@@ -300,7 +299,7 @@
   .skills-grid {
     grid-column: 2;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 28px 32px;
   }
   @media (max-width: 720px) {
@@ -433,7 +432,6 @@
 
   <!-- ============ hero ============ -->
   <section id="top" class="hero">
-    <!-- circuit decoration (echo of the back of the card) -->
     <svg class="circuit" viewBox="0 0 220 220" fill="none" aria-hidden="true">
       <g stroke="currentColor" stroke-width="1">
         <path d="M0 30 H60 L80 50 H140" />
@@ -516,7 +514,7 @@
     <div class="entries">
       <div class="entry-when">
         Feb — May 2026
-        <span class="place">Remote</span>
+        <span class="place">Manama, Bahrain</span>
       </div>
       <div class="entry-body">
         <h3>MenaMoney Technology</h3>
@@ -552,6 +550,7 @@
       <h2>Things I've built.</h2>
     </div>
     <div class="entries">
+
       <div class="entry-when">
         Web
         <span class="place">.NET stack</span>
@@ -579,7 +578,7 @@
       </div>
       <div class="entry-body">
         <h3>SeekersBH</h3>
-        <div class="sub"><span>Job-seeking & recruitment platform for Bahrain</span></div>
+        <div class="sub"><span>Job-seeking &amp; recruitment platform for Bahrain</span></div>
         <ul>
           <li>One platform combining job search, resume creation, career resources, and real-time chat.</li>
           <li>Contributed to the <strong>Admin Dashboard</strong> and the <strong>User Messaging System</strong> enabling direct communication between users.</li>
@@ -593,6 +592,45 @@
           <span class="chip">Figma</span>
         </div>
       </div>
+
+      <div class="entry-when">
+        Browser
+        <span class="place">Vanilla JS</span>
+      </div>
+      <div class="entry-body">
+        <h3>Make Your Game</h3>
+        <div class="sub"><span>Browser-based game with smooth 60fps gameplay</span></div>
+        <ul>
+          <li>Built a fully playable browser game using pure JavaScript with no frameworks.</li>
+          <li>Implemented a game loop with requestAnimationFrame for consistent 60fps rendering.</li>
+          <li>Handled collision detection, scoring, and game state management from scratch.</li>
+        </ul>
+        <div class="tech">
+          <span class="chip">JavaScript</span>
+          <span class="chip">HTML5 Canvas</span>
+          <span class="chip">CSS3</span>
+        </div>
+      </div>
+
+      <div class="entry-when">
+        Systems
+        <span class="place">Rust</span>
+      </div>
+      <div class="entry-body">
+        <h3>Filler AI Bot</h3>
+        <div class="sub"><span>AI player for the Filler territory conquest game</span></div>
+        <ul>
+          <li>Built an AI bot in Rust that competes in the Filler board game — a territory expansion challenge.</li>
+          <li>Implemented a greedy strategy with board state parsing and move evaluation logic.</li>
+          <li>Optimized for speed and reliability in head-to-head bot matches.</li>
+        </ul>
+        <div class="tech">
+          <span class="chip">Rust</span>
+          <span class="chip">Algorithms</span>
+          <span class="chip">Game AI</span>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -631,34 +669,67 @@
     </div>
     <div class="about-grid">
       <div class="skills-grid">
+
         <div class="skill-group">
           <h4>Languages</h4>
           <ul class="skill-list">
             <li>Go</li>
             <li>TypeScript</li>
+            <li>JavaScript</li>
+            <li>Python</li>
             <li>C#</li>
             <li>Swift</li>
             <li>Rust</li>
+            <li>PHP</li>
+            <li>Dart</li>
+            <li>C++</li>
           </ul>
         </div>
+
         <div class="skill-group">
           <h4>Frontend</h4>
           <ul class="skill-list">
             <li>React</li>
+            <li>Vue.js</li>
+            <li>Angular</li>
+            <li>Flutter</li>
+            <li>React Native</li>
             <li>Tailwind CSS</li>
+            <li>Bootstrap</li>
             <li>Vite</li>
             <li>Redux</li>
           </ul>
         </div>
+
         <div class="skill-group">
           <h4>Backend &amp; Data</h4>
           <ul class="skill-list">
+            <li>Node.js</li>
             <li>Express</li>
             <li>Laravel</li>
+            <li>.NET / ASP.NET</li>
+            <li>GraphQL</li>
             <li>PostgreSQL</li>
+            <li>MongoDB</li>
+            <li>MySQL</li>
             <li>SQL &amp; SQLite</li>
           </ul>
         </div>
+
+        <div class="skill-group">
+          <h4>Tools</h4>
+          <ul class="skill-list">
+            <li>Docker</li>
+            <li>Git</li>
+            <li>Firebase</li>
+            <li>Linux / Bash</li>
+            <li>Figma</li>
+            <li>Postman</li>
+            <li>Cypress</li>
+            <li>Unity</li>
+          </ul>
+        </div>
+
         <div class="skill-group">
           <h4>How I work</h4>
           <ul class="skill-list">
@@ -668,6 +739,7 @@
             <li>Self-motivated</li>
           </ul>
         </div>
+
       </div>
     </div>
   </section>
@@ -707,8 +779,7 @@
 
 </div>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-  // Reveal on scroll (lightweight)
+<script>
   const io = new IntersectionObserver((entries) => {
     for (const e of entries) {
       if (e.isIntersecting) {
